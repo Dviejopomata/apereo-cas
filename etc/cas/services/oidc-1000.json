@@ -1,7 +1,7 @@
 {
   "@class": "org.apereo.cas.services.OidcRegisteredService",
   "clientId": "client",
-  "serviceId": "^https://localhost:3000/cb",
+  "serviceId": ".*",
   "name": "OIDC",
   "implicit": true,
   "bypassApprovalPrompt": true,
