@@ -1,0 +1,15 @@
+{
+  "@class": "org.apereo.cas.services.OidcRegisteredService",
+  "clientId": "client",
+  "serviceId": "^https://localhost:3000/cb",
+  "name": "OIDC",
+  "implicit": true,
+  "bypassApprovalPrompt": true,
+  "generateRefreshToken": false,
+  "supportedGrantTypes": ["java.util.HashSet", ["implicit"]],
+  "scopes": ["java.util.HashSet", ["profile", "openid"]],
+  "attributeReleasePolicy": {
+    "@class": "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+  },
+  "id": 1000
+}
