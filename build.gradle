@@ -86,6 +86,35 @@ dependencies {
     implementation "org.apereo.cas:cas-server-support-oidc:${project.'cas.version'}"
     implementation "org.apereo.cas:cas-server-support-simple-mfa:${project.'cas.version'}"
     implementation "org.apereo.cas:cas-server-support-gauth:${project.'cas.version'}"
+    // implementation "org.apereo.cas:cas-server-support-jdbc:${project.'cas.version'}"
+    // implementation "org.apereo.cas:cas-server-support-jdbc-drivers:${project.'cas.version'}"
+    // Web and Requests
+    implementation "org.apereo.cas:cas-server-core-web-api:${project.'cas.version'}"
+
+    // Web Flow Customization
+    implementation "org.apereo.cas:cas-server-core-webflow:${project.'cas.version'}"
+    implementation "org.apereo.cas:cas-server-core-webflow-api:${project.'cas.version'}"
+    implementation "org.apereo.cas:cas-server-support-actions:${project.'cas.version'}"
+
+    // Authentication Customization
+    implementation "org.apereo.cas:cas-server-core-authentication:${project.'cas.version'}"
+    implementation "org.apereo.cas:cas-server-core-authentication-api:${project.'cas.version'}"
+    implementation "org.apereo.cas:cas-server-core-authentication-mfa-api:${project.'cas.version'}"
+
+       // JPA OSF PostgreSQL
+    implementation "org.apereo.cas:cas-server-support-jpa-util:${project.'cas.version'}"
+
+    // JPA Ticket Registry
+    implementation "org.apereo.cas:cas-server-support-jpa-ticket-registry:${project.'cas.version'}"
+
+    // Hibernate
+    implementation "org.hibernate:hibernate-core:${hibernateCoreVersion}"
+
+    // Google GSON
+    implementation "com.google.code.gson:gson:${gsonVersion}"
+
+    // implementation "org.apereo.cas:cas-server-support-pm-jdbc:${project.'cas.version'}"
+
     compile "org.apereo.cas:cas-server-support-pac4j-webflow:${project.'cas.version'}"
 }
 

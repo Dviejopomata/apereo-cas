@@ -5,9 +5,9 @@
   "name": "OIDC",
   "implicit": true,
   "bypassApprovalPrompt": true,
-  "generateRefreshToken": false,
+  "generateRefreshToken": true,
   "supportedGrantTypes": ["java.util.HashSet", ["implicit"]],
-  "scopes": ["java.util.HashSet", ["profile", "openid"]],
+  "scopes": ["java.util.HashSet", ["profile", "openid", "email", "offline_access"]],
   "attributeReleasePolicy": {
     "@class": "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
   },
